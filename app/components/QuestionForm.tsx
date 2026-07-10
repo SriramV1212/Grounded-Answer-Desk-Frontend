@@ -52,7 +52,7 @@ export function QuestionForm({
         placeholder="Ask a question about the corpus..."
         disabled={isLoading}
         rows={1}
-        className="max-h-40 flex-1 resize-none bg-transparent px-2 py-2 text-base text-foreground placeholder:text-muted disabled:opacity-60"
+        className="max-h-40 flex-1 resize-none bg-transparent px-2 py-2 text-base text-foreground placeholder:text-muted focus-visible:outline-none disabled:opacity-60"
       />
       <button
         type="submit"
