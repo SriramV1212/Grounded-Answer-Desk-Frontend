@@ -2,14 +2,14 @@
 
 **Live demo:** [grounded-answer-desk-frontend.vercel.app](https://grounded-answer-desk-frontend.vercel.app/)
 
-Frontend for a RAG (retrieval-augmented generation) assessment tool. Ask a
+Frontend for a RAG (retrieval-augmented generation) system. Ask a
 question, get a grounded answer or an explicit abstention, and inspect the
 actual retrieved chunks (with similarity scores, headings, and source URLs)
 that produced it — the retrieval step is never a black box.
 
 This is the frontend half only. The backend (FastAPI + OpenClaw agent +
 Qdrant) lives in a separate repo:
-[Grounded-Answer-Desk-Assignment](https://github.com/SriramV1212/Grounded-Answer-Desk-Assignment).
+[backend repository](https://github.com/SriramV1212/Grounded-Answer-Desk-Assignment).
 
 ## Stack
 

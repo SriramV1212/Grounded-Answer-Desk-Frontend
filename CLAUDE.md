@@ -1,7 +1,7 @@
 # Grounded Answer Desk — Frontend
 
 ## What this is
-Frontend for an AI Engineer take-home assessment. The backend is a RAG system:
+Frontend for an open-source RAG system. The backend is a RAG system:
 user asks a question → an agent (OpenClaw) retrieves via a custom MCP server →
 returns a grounded, cited answer or abstains. This frontend's job is to make
 that retrieval process visibly NOT a black box — the UI must show the actual
@@ -41,7 +41,7 @@ One page:
 2. Answer display, with a loading state while waiting on the backend
 3. Retrieval inspector panel: table of retrieved_chunks (chunk text truncated
    with expand, score, section_heading, source_url) — must visibly show real
-   similarity scores (assignment explicitly requires this)
+   similarity scores (this is a core requirement of the project)
 4. Clear visual distinction between a grounded answer and an abstention
 5. Basic error handling for backend-unreachable / error responses
 
