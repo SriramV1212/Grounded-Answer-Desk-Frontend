@@ -17,9 +17,10 @@ export function EmptyState() {
         What do you want to know?
       </h2>
       <p className="mx-auto mt-2 max-w-md text-sm leading-relaxed text-muted">
-        Ask a question about the corpus below. Every answer arrives grounded
-        in retrieved evidence, or the system abstains if nothing relevant is
-        found. Here&apos;s what a result looks like:
+        Ask a question about the corpus below &mdash; the Anthropic API
+        documentation. Every answer arrives grounded in retrieved evidence,
+        or the system abstains if nothing relevant is found. Here&apos;s
+        what a result looks like:
       </p>
 
       <div className="mt-8 rounded-xl border border-dashed border-border bg-surface/70 p-5 text-left sm:p-6">
