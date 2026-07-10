@@ -8,10 +8,10 @@ import { askQuestion, AskApiError } from "@/lib/api";
 
 export default function Home() {
   const [turns, setTurns] = useState<Turn[]>([]);
-  const bottomRef = useRef<HTMLDivElement>(null);
+  const latestTurnRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+    latestTurnRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
   }, [turns]);
 
   async function handleSubmit(question: string) {
@@ -58,10 +58,14 @@ export default function Home() {
           </div>
         ) : (
           <div className="mx-auto flex max-w-[1040px] flex-col gap-8 py-8">
-            {turns.map((turn) => (
-              <ConversationTurnView key={turn.id} turn={turn} />
+            {turns.map((turn, index) => (
+              <div
+                key={turn.id}
+                ref={index === turns.length - 1 ? latestTurnRef : undefined}
+              >
+                <ConversationTurnView turn={turn} />
+              </div>
             ))}
-            <div ref={bottomRef} />
           </div>
         )}
       </main>
